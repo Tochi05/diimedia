@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>DiiQUBE MEDIA</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="assets/img/logo.png" class="logo-dark" alt="Logo">
+                    <img src="assets/img/logo-wh.png" class="logo-light" alt="Logo-wh">
+                </div>
+            </a>
+
+            <div class="nav-links">
+                <span class="nav-close" id="navClose"><i class="fa-solid fa-xmark"></i></span>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="service.html">Works</a>
+                <a href="contact.php">Contact</a>
+            </div>
+
+            <div class="icon hamburger" id="hamburger">
+                <a href="#" aria-label="Menu"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="hero">
+        <video class="hero-video" autoplay muted loop playsinline poster="assets/img/ph-1.jpg">
+            <source src="assets/vid/hero-bg.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <span>Media & Creative Agency</span>
+            <h1 data-reveal="fade-up">We Tell Stories That Move</h1>
+            <p data-reveal="fade-up">Media strategy, branding, photography, videography, and content production - crafted to make your brand unforgettable.</p>
+        </div>
+
+        <div class="hero-buttons">
+            <a href="contact.php" class="btn btn-secondary" data-reveal="slide-left">
+                <i class="fa-solid fa-arrow-right"></i> Get Started
+            </a>
+            <button id="openVideoBtn" class="btn btn-primary" data-reveal="slide-right">
+                <i class="fa-regular fa-circle-play"></i> View Our Story
+            </button>
+        </div>
+
+        <div id="videoModal" class="video-modal">
+            <div class="video-modal-content">
+                <div class="video-modal-header">
+                    <span class="video-modal-label">DiiQUBE Media</span>
+                    <span id="closeVideoBtn" class="video-close">&times;</span>
+                </div>
+                <video id="storyVideo" controls>
+                    <source src="assets/vid/cam.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="works">
+        <div class="works-head">
+            <h1>Production Services</h1>
+            <p>Full-spectrum media services, from first idea to final placement.</p>
+        </div>
+
+        <div class="works-grid">
+            <a href="#">
+                <div class="works-card" data-reveal="fade-up">
+                    <img src="assets/img/ph-2.jpg">
+                    <div class="works-overlay"></div>
+                    
+                    <div class="works-cont">
+                        <h2>Branding & Creative Design</h2>
+                        <p>Visual identity that stands out.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="works-card" data-reveal="fade-up" data-delay="0.2">
+                    <img src="assets/img/ph-4.jpg">
+                    <div class="works-overlay"></div>
+
+                    <div class="works-cont">
+                        <h2>Photography & Videography</h2>
+                        <p>Premium visuals for every platform.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="works-card" data-reveal="fade-up" data-delay="0.3">
+                    <img src="assets/img/ph-3.jpg">
+                    <div class="works-overlay"></div>
+
+                    <div class="works-cont">
+                        <h2>Digital Marketing & Social Media</h2>
+                        <p>Growth-focused campaigns.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="services">
+        <div class="services-head">
+            <h1>Featured Works</h1>
+            <p>A snapshot of recent projects across photo, video, and campaigns.</p>
+        </div>
+
+        <div class="services-grid">
+
+        <div class="services-card" data-reveal="slide-left">
+            <a href="#" target="_blank">
+                <img src="assets/img/wrk-2.jpg" alt="StarKids Live in Concert">
+            </a>
+            <div class="services-content">
+                <span class="services-txt">Concert Production</span>
+                <h1>StarKids Live in Concert</h1>
+                <p>DiiQUBE Media successfully delivered seamless event coverage, expanded audience accessibility, and enabled rapid social media content delivery throughout the conference.</p>
+                <a href="#">View More <i class="fa-solid fa-arrow-up-long"></i></a>
+            </div>
+        </div>
+
+        <div class="services-card" data-reveal="slide-left" data-delay="0.1">
+            <a href="#" target="_blank">
+                <img src="assets/img/ph-3.jpg" alt="StarKids Live in Concert">
+            </a>
+            <div class="services-content">
+                <span class="services-txt">Digital Production</span>
+                <h1>Chanseur Group Picnic</h1>
+                <p>The easy laughter, the shared meals, the quiet conversations under open skies. No script, no pressure, just genuine connection between friends.</p>
+                <a href="#">View More <i class="fa-solid fa-arrow-up-long"></i></a>
+            </div>
+        </div>
+
+        <div class="services-card" data-reveal="slide-left" data-delay="0.1">
+            <a href="#" target="_blank">
+                <img src="assets/img/wrk-3.jpeg" alt="StarKids Live in Concert">
+            </a>
+            <div class="services-content">
+                <span class="services-txt">Live Production</span>
+                <h1>DiiQUBE Media celebrated Jaycee's birthday</h1>
+                <p>We had the honor of capturing every beat, every move, and every joyful moment as this incredible group brought the dance floor alive for an unforgettable birthday experience.</p>
+                <a href="#">View More <i class="fa-solid fa-arrow-up-long"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="overview">
+        <div class="overview-head">
+            <h1 data-reveal="fade-up">Video Production Across Nigeria & Africa</h1>
+            <p data-reveal="fade-up">Media strategy, branding, photography, videography, and content production - crafted to make your brand unforettable.</p>
+        </div>
+
+        <div class="over">
+            <div class="over-count" data-reveal="slide-left">
+                <h1>2+</h1>
+                <p>Years of production Experience</p>
+            </div>
+
+            <div class="over-count" data-reveal="fade-up">
+                <h1>10+</h1>
+                <p>Projects delivered</p>
+            </div>
+
+            <div class="over-count" data-reveal="slide-right">
+                <h1>Trusted</h1>
+                <p>By leading brands</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="visi">
+        <div class="visi-grid">
+            <div class="visi-card" data-reveal="slide-left">
+                <p><i class="fa-regular fa-handshake"></i> Reliable</p>
+            </div>
+
+            <div class="visi-card" data-reveal="slide-left">
+                <p><i class="fa-solid fa-bullseye"></i> Result-driven</p>
+            </div>
+
+            <div class="visi-card" data-reveal="slide-right">
+                <p><i class="fa-solid fa-user-tie"></i> Professional</p>
+            </div>
+
+            <div class="visi-card" data-reveal="slide-right">
+                <p><i class="fa-solid fa-palette"></i> Creative</p>
+            </div>
+        </div>
+
+        <p data-reveal="fade-up">DiiQUBE Media has fought to be the most sort out media institution in content development media resource for <span>Theatre, Multimedia, & Web</span>. DiiQUBE Media combines video production experience, trusted technical crews, and local storytelling intelligence to deliver live event, documentary, broadcast, and digital media projects across Nigeria and Africa.</p>
+
+        <div class="visi-btn">
+            <a href="contact.php" class="visi-1" data-reveal="fade-up">Start a project <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="service.html" class="visi-2" data-reveal="fade-up">View our works</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <img src="assets/img/logo.png" alt="logo">
+                <p>We help brands tell their stories with clarity, creativity, and impact.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="service.html">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="service.html">Photo & Video</a></li>
+                    <li><a href="service.html">Media & Consult</a></li>
+                    <li><a href="service.html">Pub & Print</a></li>
+                    <li><a href="service.html">Advertising & Media Placement</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> 37, Adeboye Str., Ilaje Bariga, Lagos, Nigeria</li>
+                    <li><i class="fa-solid fa-phone"></i> +234 913 422 6014</li>
+                    <li><i class="fa-solid fa-envelope"></i> contact.diiqubemetro@gmail.com</li>
+                    <li><i class="fa-solid fa-clock"></i> Mon - Sat: 6am - 10pm</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 DiiQUBE Media. All rights reserved.</p>
+            <p>Designed by <a href="#"></a></p>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+
+
+    
+    <script src="assets/js/script.js"></script>
+    </body>
+</html>
